@@ -13,7 +13,7 @@
 #'
 #'Note: This function does not change the input file but prints any errors found in the console.
 #'
-#' @param ped.file path to pedigree text file. The pedigree file is a
+#' @param ped.file.path path to pedigree text file. The pedigree file is a
 #' 3-column pedigree tab separated file with columns labeled as id sire dam in any order
 #' @return A list of dataframes of error types, and the output printed to the console
 #' @examples
@@ -31,7 +31,7 @@
 #' @importFrom utils read.table
 #' @export
 #### Function to check for hierarchical errors missing parents and repeated ids ####
-check_ped <- function(ped.file) {
+check_ped <- function(ped.file.path) {
   set.seed(101919)
   #### read in data ####
   data = utils::read.table(ped.file, header = T)

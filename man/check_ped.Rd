@@ -4,10 +4,10 @@
 \alias{check_ped}
 \title{Evaluate Pedigree File for Accuracy}
 \usage{
-check_ped(ped.file)
+check_ped(ped.file.path)
 }
 \arguments{
-\item{ped.file}{path to pedigree text file. The pedigree file is a
+\item{ped.file.path}{path to pedigree text file. The pedigree file is a
 3-column pedigree tab separated file with columns labeled as id sire dam in any order}
 }
 \value{

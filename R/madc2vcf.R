@@ -19,7 +19,7 @@
 #' @references
 #' Updog R package
 #' @export
-madc2vcf <- function(madc_file, output.file, get_REF_ALT = FALSE) {
+madc2vcf <- function(madc_file, output.file, get_REF_ALT = TRUE) {
   #Making the VCF (This is highly dependent on snps being in a format where the SNP IDs are the CHR_POS)
 
   matrices <- get_countsMADC(madc_file)
